@@ -25,9 +25,6 @@ app.post('/matricula', async (req, resp) => {
         if (nome.length < 4 || curso.length < 4 || turma.length < 4)
             return resp.send({ erro: ' Insira mais que 4 caracteres!' });
 
-        if (chamada != null && turma != null)
-            return resp.send({ erro: 'O número de Chamada já existe nesta turma!' });
-
         if (chamada <= 0)
             return resp.send({ erro: ' Números negativos não são permitidos' });
         
