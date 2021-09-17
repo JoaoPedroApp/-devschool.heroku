@@ -12,3 +12,7 @@ const sequelize = new Sequelize(
 
 const db = initdb(sequelize);
 export default db;
+
+// 'mysql_17753_nsf2021',
+//     'nsf2021',
+//     'nsf@2021',
